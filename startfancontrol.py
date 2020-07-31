@@ -58,7 +58,7 @@ if __name__ == '__main__':
         # isn't already running.
         # NOTE: `fan.value` returns 1 for "on" and 0 for "off"
         #if temp > ON_THRESHOLD and not fan.value:
-            fan.on()
+        #    fan.on()
 
         # Stop the fan if the fan is running and the temperature has dropped
         # to 10 degrees below the limit.
