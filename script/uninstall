@@ -1,0 +1,16 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "=> Stopping fan controller...\n"
+sudo update-rc.d fancontrol.sh remove
+sudo /etc/init.d/fancontrol.sh stop
+
+echo "=> Removing fan controller...\n"
+sudo rm -rf /usr/local/bin/startfancontrol.py 
+sudo rm -rf /usr/local/bin/stopfancontrol.py 
+sudo rm -rf /etc/init.d/fancontrol.sh
+
+echo "Fan controller uninstalled.\n"
