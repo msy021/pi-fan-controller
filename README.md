@@ -15,7 +15,7 @@ found on our guide: [Control Your Raspberry Pi Fan (and Temperature) with Python
 1. Clone this repo: `git clone https://github.com/msy021/pi-fan-controller.git`
 1. Run the setup script: `./pi-fan-controller/script/install`
 
-## If pip is not already installed run:
+### If pip is not already installed run:
 `sudo apt install python3-pip`
 
 ### Install requirements globally
